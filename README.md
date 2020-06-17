@@ -1,2 +1,2 @@
 # The-Game-of-Life
-CSPT&amp; Build Week Project
+CSPT7 Build Week Project
