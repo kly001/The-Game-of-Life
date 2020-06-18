@@ -13,3 +13,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+p {
+  margin: 50px;
+  padding: 20px
+}

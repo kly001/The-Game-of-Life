@@ -4,7 +4,7 @@ class Game extends Component {
   render() {
     return (
       <div>
-        <h1>Game Board goes here.</h1>
+       <p> Game board goes here.</p>
       </div>
     )
   }
