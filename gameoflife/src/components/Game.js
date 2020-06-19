@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Grid from "./Grid"
+import Buttons from "./Buttons"
 
 class Game extends Component {
   constructor() {
@@ -17,6 +18,17 @@ class Game extends Component {
   render() {
     return (
       <div>
+        <h1>The Game of Life</h1>
+        <Buttons
+					playButton={this.playButton}
+					pauseButton={this.pauseButton}
+					slow={this.slow}
+					medium={this.medium}
+					fast={this.fast}
+					clear={this.clear}
+					seed={this.seed}
+					gridSize={this.gridSize}
+				/>
      
        <Grid
 					gridFull={this.state.gridFull}

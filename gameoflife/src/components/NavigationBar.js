@@ -12,7 +12,7 @@ class NavigationBar extends React.Component {
             <div>
               <nav className="navbar fixed-top navbar-expand-md bg-primary navbar-dark">
                 <div className="container-fluid">
-                  <NavLink className="navbar-brand" exact to="/" >React Navbar</NavLink>
+                  <NavLink className="navbar-brand" exact to="/game" >The Game of Life</NavLink>
                   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>
                   </button>
