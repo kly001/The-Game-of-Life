@@ -2,7 +2,7 @@ My Process:
 
 1.  The first decision I had to make was a no brainer for me:  What language will I use? Why?
 
-    I am using the Javascript library React.  The homepage, (https://reactjs.org/) declares that
+    I am using React, an open-source JavaScript library for building user interfaces. The homepage, (https://reactjs.org/) declares that
     React is :
         * Declarative - React makes it painless to create interactive UIs. Design simple views 
         for each state in your application, and React will efficiently update and render just 
@@ -17,4 +17,19 @@ My Process:
         stack, so you can develop new features in React without rewriting existing code.  React can
         also render on the server using Node and power mobile apps using React Native.
 
-2.  Using 'create-react-app', I setup the boilerplate for my code and tweeked a bit to my liking.
+2.  Using 'create-react-app', I setup the boilerplate for my code and tweeked it a bit to my liking.  I added
+    a components directory to hold the following files: Navigation Bar, Home, Game, Grid, Box, Buttons.
+
+3.  Dependencies:
+    * Bootstrap - the most popular CSS Framework for developing responsive and 
+            mobile-first websites.
+    * React Bootstrap - React-Bootstrap replaces the Bootstrap JavaScript. Each 
+            component has been built from scratch as a true React component, 
+            without unneeded dependencies like jQuery.  React-Bootstrap has evolved 
+            and grown alongside React, making it an excellent choice as your UI foundation.
+            Built with compatibility in mind, we embrace our bootstrap core and strive 
+            to be compatible with the world's largest UI ecosystem.  By relying entirely 
+            on the Bootstrap stylesheet, React-Bootstrap just works with the thousands 
+            of Bootstrap themes you already love
+    * React-Router-DOM - offers a way to write your code so that it will show certain components 
+            of your app only if the route matches what you define.
