@@ -30,10 +30,10 @@ These notes are to journal my work on this Build Week Project. Keeping a detaile
 2.  Using 'create-react-app', I setup the boilerplate for my code and tweeked it a bit to my liking. A 
     components directory was created to hold the following files:
         * Navigation Bar - Links to the pages of the app.  Can be altered as the application grows. 
-        * Home -  The landing page; contain information about the game and the rules for playing.
+        * Home - landing page; will contain information about the game and the rules for playing.
         * Game - contain the code that makes the game works.
         * Grid - contains the code than defines the game grid.
-        * Box -
+        * Box - contains the code for each individual cell(box).
         * Buttons - contains the code for the buttons that are used to play the game.
 
 
@@ -51,4 +51,8 @@ These notes are to journal my work on this Build Week Project. Keeping a detaile
     * React-Router-DOM - offers a way to write your code so that it will show certain components 
             of your app only if the route matches what you define.
 
-4.  
+4.  Game.js - main component; contains the entire game page
+    * need to import Buttons and Grid for display
+    * need to display a counter for the 'generations'(stored as a state variable in Games.js)
+    * need to define state (constructor)
+    * setup initial values for generation, rows, columns and speed

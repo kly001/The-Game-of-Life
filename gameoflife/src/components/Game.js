@@ -5,7 +5,7 @@ import Buttons from "./Buttons"
 class Game extends Component {
   constructor() {
 		super();
-		this.speed = 100;
+		this.speed = 250;
 		this.rows = 30;
 		this.cols = 50;
 
