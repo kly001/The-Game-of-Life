@@ -1,9 +1,13 @@
 My Process:
 
+These notes are to journal my work on this Build Week Project. Keeping a detailed record of my thoughts,
+    coding process and difficulties will help my future self overcome "Imposter Syndrome" and
+    show proof of my progress.
+
 1.  The first decision I had to make was a no brainer for me:  What language will I use? Why?
 
-    I am using React, an open-source JavaScript library for building user interfaces. The homepage, (https://reactjs.org/) declares that
-    React is :
+    I am using React, an open-source JavaScript library for building user interfaces. The homepage, 
+    (https://reactjs.org/) declares that React is :
         * Declarative - React makes it painless to create interactive UIs. Design simple views 
         for each state in your application, and React will efficiently update and render just 
         the right components when your data changes.  Declarative views make your code more 
@@ -16,9 +20,22 @@ My Process:
         * Learn Once, Write Anywhere - We don’t make assumptions about the rest of your technology 
         stack, so you can develop new features in React without rewriting existing code.  React can
         also render on the server using Node and power mobile apps using React Native.
+    
+    My reasons are simple.  It is the first language that I learned.  I'm more familiar and comfortable with
+        Javascript.  Python is the language I am presently learning, but I don't feel comfortable enough to
+        use it for a project.
 
-2.  Using 'create-react-app', I setup the boilerplate for my code and tweeked it a bit to my liking.  I added
-    a components directory to hold the following files: Navigation Bar, Home, Game, Grid, Box, Buttons.
+
+
+2.  Using 'create-react-app', I setup the boilerplate for my code and tweeked it a bit to my liking. A 
+    components directory was created to hold the following files:
+        * Navigation Bar - Links to the pages of the app.  Can be altered as the application grows. 
+        * Home -  The landing page; contain information about the game and the rules for playing.
+        * Game - contain the code that makes the game works.
+        * Grid - contains the code than defines the game grid.
+        * Box -
+        * Buttons - contains the code for the buttons that are used to play the game.
+
 
 3.  Dependencies:
     * Bootstrap - the most popular CSS Framework for developing responsive and 
@@ -33,3 +50,5 @@ My Process:
             of Bootstrap themes you already love
     * React-Router-DOM - offers a way to write your code so that it will show certain components 
             of your app only if the route matches what you define.
+
+4.  
