@@ -15,6 +15,41 @@ class Game extends Component {
 		}
 	}
 
+// Button control logic
+
+playButton = () => {
+
+}
+
+pauseButton = () => {
+	
+}
+
+slow = () => {
+	
+}
+
+medium = () => {
+	
+}
+
+fast= () => {
+	
+}
+
+clear = () => {
+	
+}
+
+populate= () => {
+	
+}
+
+gridSize = () => {
+	
+}
+
+
   render() {
     return (
       <div>
