@@ -3,8 +3,8 @@ import { ButtonToolbar, DropdownButton, Dropdown, ButtonGroup } from 'react-boot
 
 class Buttons extends Component {
 
-	handleSelect = (evt) => {
-		this.props.gridSize(evt);
+	handleSelect = (event) => {
+		this.props.gridSize(event);
 	}
 
 	render() {
@@ -30,7 +30,7 @@ class Buttons extends Component {
 					<button className="btn btn-info" onClick={this.props.fast}>
 					  Fast
 					</button>
-					<button className="btn btn-info" onClick={this.props.seed}>
+					<button className="btn btn-info" onClick={this.props.populate}>
 					  Populate
 					</button>
 					<DropdownButton

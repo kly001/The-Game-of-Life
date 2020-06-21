@@ -26,7 +26,7 @@ class Game extends Component {
 					medium={this.medium}
 					fast={this.fast}
 					clear={this.clear}
-					seed={this.seed}
+					populate={this.populate}
 					gridSize={this.gridSize}
 				/>
      

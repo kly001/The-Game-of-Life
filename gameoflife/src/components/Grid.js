@@ -3,7 +3,7 @@ import Box from "./Box"
 
 class Grid extends Component {
 	render() {
-		const width = (this.props.cols * 14);
+		const width = (this.props.cols * 16);
 		let rowsArr = [];
 
 		let boxClass = "";
@@ -15,7 +15,6 @@ class Grid extends Component {
 				rowsArr.push(
 					<Box
 						boxClass={boxClass}
-						key={boxId}
 						boxId={boxId}
 						row={x}
 						col={y}
