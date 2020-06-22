@@ -30,7 +30,7 @@ class Buttons extends Component {
 					<button className="btn btn-info" onClick={this.props.fast}>
 					  Fast
 					</button>
-					<button className="btn btn-info" onClick={this.props.populate}>
+					<button className="btn btn-warning" onClick={this.props.populate}>
 					  Populate
 					</button>
 					<DropdownButton

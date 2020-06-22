@@ -10,7 +10,7 @@ class NavigationBar extends React.Component {
       <BrowserRouter>
           <div>
             <div>
-              <nav className="navbar fixed-top navbar-expand-md bg-success navbar-dark">
+              <nav className="navbar fixed-top navbar-expand-md bg-primary navbar-dark">
                 <div className="container-fluid">
                   <NavLink className="navbar-brand" exact to="/game" >The Game of Life</NavLink>
                   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

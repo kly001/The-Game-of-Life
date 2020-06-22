@@ -47,29 +47,46 @@ class Game extends Component {
 		clearInterval(this.intervalId);
 	}
 
-// slow = () => {
-	
-// }
+	slow = () => {
+		this.speed = 500;
+		this.playButton();
+	}
 
-// medium = () => {
-	
-// }
+	medium = () => {
+		this.speed = 250;
+		this.playButton();
+	}
 
-// fast= () => {
-	
-// }
+	fast = () => {
+		this.speed = 100;
+		this.playButton();
+	}
 
-// clear = () => {
-	
-// }
+	clear = () => {
+		var grid = Array(this.rows).fill().map(() => Array(this.cols).fill(false));
+		this.setState({
+			gridFill: grid,
+			generation: 0
+		});
+	}
 
-// populate= () => {
-	
-// }
+gridSize = (size) => {
+	switch (size) {
+		case "1":
+			this.cols = 25;
+			this.rows = 25;
+		break;
+		case "2":
+			this.cols = 50;
+			this.rows = 30;
+		break;
+		default:
+			this.cols = 70;
+			this.rows = 50;
+	}
+	this.clear();
 
-// gridSize = () => {
-	
-// }
+}
 
 play = () => {
 	let g = this.state.gridFill;
@@ -125,13 +142,16 @@ render() {
 				populate={this.populate}
 				gridSize={this.gridSize}
 			/>
+
+			<h2>Generations: {this.state.generation}</h2>
+
 			<Grid
 				gridFill={this.state.gridFill}
 				rows={this.rows}
 				cols={this.cols}
 				selectBox={this.selectBox}
 			/>
-			<h2>Generations: {this.state.generation}</h2>
+			
 		</div>
 	);
 }
