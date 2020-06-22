@@ -81,6 +81,8 @@ These notes are to journal my work on this Build Week Project. Keeping a detaile
     * gridFillclone function (helper function to be used again)-  array is copied 
         by first stringifying it and then parsing it to make a deep clone of all 
         the arrays inside the array
-    * populate method to turn randon boxes on from the start
-    * componentDidMount() - life-cycle hook
+    * populate method - to turn on random boxes from the start
+    * componentDidMount() - life-cycle hook; runs populate method
+    * playButton() and pauseButton() - start and stop the game play
+    
 

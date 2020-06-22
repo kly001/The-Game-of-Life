@@ -38,13 +38,14 @@ class Game extends Component {
 		});
 	}
 
-// playButton = () => {
+	playButton = () => {
+		clearInterval(this.intervalId);
+		this.intervalId = setInterval(this.play, this.speed);
+	}
 
-// }
-
-// pauseButton = () => {
-	
-// }
+	pauseButton = () => {
+		clearInterval(this.intervalId);
+	}
 
 // slow = () => {
 	
@@ -70,11 +71,44 @@ class Game extends Component {
 	
 // }
 
+play = () => {
+	let g = this.state.gridFill;
+	let g2 = arrayClone(this.state.gridFill);
 
+	// If a box is in position [i}[j], the all of it's adjacent boxes are:
+	//     [i-1][j], [i][j-1], [i-1][j+1], [i+1][j-1], 
+	//     [i+1][j], [i][j+1], [i+1][j+1], [i-1][j-1],
+
+	for (let i = 0; i < this.rows; i++) {
+	  for (let j = 0; j < this.cols; j++) {
+		let count = 0;
+		if (i > 0 && g[i - 1][j]) count++;
+		if (j > 0 && g[i][j - 1]) count++;
+
+		if (i > 0 && j < this.cols - 1 && g[i - 1][j + 1]) count++;
+		if (j > 0 && i < this.rows - 1 && g[i + 1][j - 1]) count++;
+
+		if (i < this.rows - 1 && g[i + 1][j]) count++;
+		if (j < this.cols - 1 && g[i][j + 1]) count++;
+
+		if (i > 0 && j > 0 && g[i - 1][j - 1]) count++;
+		if (i < this.rows - 1 && j < this.cols - 1 && g[i + 1][j + 1]) count++;
+		
+		if (g[i][j] && (count < 2 || count > 3)) g2[i][j] = false;
+		if (!g[i][j] && count === 3) g2[i][j] = true;
+	  }
+	}
+	this.setState({
+	  gridFill: g2,
+	  generation: this.state.generation + 1
+	
+	});
+
+}
 
 componentDidMount() {
 	this.populate();
-	
+	this.playButton()	
 }
 
 render() {
