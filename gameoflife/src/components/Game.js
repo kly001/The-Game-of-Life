@@ -16,8 +16,22 @@ class Game extends Component {
 	}
 
 	selectBox = (row, col) => {
-		let gridCopy = gridFillClone(this.state.gridFill);
+		let gridCopy = arrayClone(this.state.gridFill);
 		gridCopy[row][col] = !gridCopy[row][col];
+		this.setState({
+			gridFill: gridCopy
+		});
+	}
+
+	populate = () => {
+		let gridCopy = arrayClone(this.state.gridFill);
+		for (let i = 0; i < this.rows; i++) {
+			for (let j = 0; j < this.cols; j++) {
+				if (Math.floor(Math.random() * 4) === 1) {
+					gridCopy[i][j] = true;
+				}
+			}
+		}
 		this.setState({
 			gridFill: gridCopy
 		});
@@ -88,7 +102,7 @@ gridSize = () => {
 
 // Helper Function:
 
-function gridFillClone(arr) {
+function arrayClone(arr) {
 	return JSON.parse(JSON.stringify(arr));
 }
 export default Game

@@ -2,7 +2,9 @@ My Process:
 
 These notes are to journal my work on this Build Week Project. Keeping a detailed record of my thoughts,
     coding process and difficulties will help my future self overcome "Imposter Syndrome" and
-    show proof of my progress.
+    show proof of my progress.  This is something that I have not had much success in the past so
+    it will be a top priority.
+    
 
 1.  The first decision I had to make was a no brainer for me:  What language will I use? Why?
 
@@ -68,3 +70,15 @@ These notes are to journal my work on this Build Week Project. Keeping a detaile
     * iterate over array
     * boxClass - check if the specified box is ON (true) or OFF (false)
     
+6.  Box.js - setting up individual boxes for the grid
+    * id and boxClass are rendered
+    * onClick function, to change the color of a box when it is clicked,
+        which will called the selectBox function
+    *  pass in props for the rows and cols
+
+7.  Game.js
+    * add selectBox method - determines whether a box is on or off and changes it to the opposite value
+    * add gridFillclone function (helper function to be used again); array is copied 
+        by first stringifying it and then parsing it to make a deep clone of all 
+        the arrays inside the array
+

@@ -24,9 +24,10 @@ class Grid extends Component {
 			}
 		}
 		return (
-			<div className="grid" style={{width: width}}>
+			<div className="grid" style={{width: width}}>  
 				{rowsArr}
 			</div>
+			//NOTE: 2 curly braces are needed inside a tag; allows the grid size to be changed
 		);
 	}
 }
