@@ -84,5 +84,5 @@ These notes are to journal my work on this Build Week Project. Keeping a detaile
     * populate method - to turn on random boxes from the start
     * componentDidMount() - life-cycle hook; runs populate method
     * playButton() and pauseButton() - start and stop the game play
-    
+    * Game speeds and Clear grid functions
 
