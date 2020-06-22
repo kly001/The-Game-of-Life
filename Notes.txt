@@ -77,8 +77,10 @@ These notes are to journal my work on this Build Week Project. Keeping a detaile
     *  pass in props for the rows and cols
 
 7.  Game.js
-    * add selectBox method - determines whether a box is on or off and changes it to the opposite value
-    * add gridFillclone function (helper function to be used again); array is copied 
+    * selectBox method - determines whether a box is on or off and changes it to the opposite value
+    * gridFillclone function (helper function to be used again)-  array is copied 
         by first stringifying it and then parsing it to make a deep clone of all 
         the arrays inside the array
+    * populate method to turn randon boxes on from the start
+    * componentDidMount() - life-cycle hook
 
