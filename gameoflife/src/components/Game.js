@@ -15,6 +15,14 @@ class Game extends Component {
 		}
 	}
 
+	selectBox = (row, col) => {
+		let gridCopy = gridFillClone(this.state.gridFill);
+		gridCopy[row][col] = !gridCopy[row][col];
+		this.setState({
+			gridFill: gridCopy
+		});
+	}
+
 // Button control logic
 
 playButton = () => {
@@ -64,18 +72,23 @@ gridSize = () => {
 					populate={this.populate}
 					gridSize={this.gridSize}
 				/>
+
+		<h2>Generations: {this.state.generation}</h2>
      
        <Grid
 					gridFill={this.state.gridFill}
 					rows={this.rows}
 					cols={this.cols}
 					selectBox={this.selectBox}
-				/>
-				<h2>Generations: {this.state.generation}</h2>
+				/>		
       </div>
     )
   }
 }
 
+// Helper Function:
 
+function gridFillClone(arr) {
+	return JSON.parse(JSON.stringify(arr));
+}
 export default Game

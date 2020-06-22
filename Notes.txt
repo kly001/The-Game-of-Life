@@ -56,10 +56,10 @@ These notes are to journal my work on this Build Week Project. Keeping a detaile
     * need to display a counter for the 'generations'(stored as a state variable in Games.js)
     * need to define state variables(constructor)
     * setup initial values for generation, rows, columns and speed.
-    * gridFull: This creates a 2-dimensional array, 30 by 50,  with each element set to false;
+    * gridFill: This creates a 2-dimensional array, 30 by 50,  with each element set to false;
         an array of rows filled with a map of an array of columns where each
         element(box) is initially set to false to show that it is 'off' or dead (nested arrays)
-    * pass props (gridFull, row, cols) into render;NOTE ==> selectBox still needs to be setup
+    * pass props (gridFill, row, cols) into render; (NOTE ==> selectBox still needs to be setup at this point)
         
 5.  Grid.js - setting up the grid
     * rowsArr: returns an array of all the rows

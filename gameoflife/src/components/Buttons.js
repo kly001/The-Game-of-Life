@@ -39,7 +39,7 @@ class Buttons extends Component {
 						onSelect={this.handleSelect}
 					>
 						<Dropdown.Item eventKey="1">25x25</Dropdown.Item>
-						<Dropdown.Item eventKey="2">50x30</Dropdown.Item>
+						<Dropdown.Item eventKey="2">50x30-Default</Dropdown.Item>
 						<Dropdown.Item eventKey="3">70x50</Dropdown.Item>
 					</DropdownButton>
           </ButtonGroup>
