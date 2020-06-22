@@ -11,7 +11,7 @@ class Game extends Component {
 
 		this.state = {
 			generation: 0,
-			gridFull: Array(this.rows).fill().map(() => Array(this.cols).fill(false))
+			gridFill: Array(this.rows).fill().map(() => Array(this.cols).fill(false))
 		}
 	}
 
@@ -66,7 +66,7 @@ gridSize = () => {
 				/>
      
        <Grid
-					gridFull={this.state.gridFull}
+					gridFill={this.state.gridFill}
 					rows={this.rows}
 					cols={this.cols}
 					selectBox={this.selectBox}
