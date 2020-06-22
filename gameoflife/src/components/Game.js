@@ -6,7 +6,7 @@ import Grid from "./Grid"
 class Game extends Component {
 	constructor() {
 		super();
-		this.speed = 250;
+		this.speed = 500;
 		this.rows = 30;
 		this.cols = 50;
 
@@ -131,7 +131,7 @@ componentDidMount() {
 render() {
 	return (
 		<div>
-			<h1>The Game of Life</h1>
+			
 			<Buttons
 				playButton={this.playButton}
 				pauseButton={this.pauseButton}
