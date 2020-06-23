@@ -143,7 +143,7 @@ render() {
 				gridSize={this.gridSize}
 			/>
 
-			<h2>Generations: {this.state.generation}</h2>
+			<h2>Generation: {this.state.generation}</h2>
 
 			<Grid
 				gridFill={this.state.gridFill}
