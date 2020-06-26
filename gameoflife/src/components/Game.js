@@ -7,8 +7,8 @@ class Game extends Component {
 	constructor() {
 		super();
 		this.speed = 500;
-		this.rows = 30;
-		this.cols = 50;
+		this.rows = 25;
+		this.cols = 25;
 
 		this.state = {
 			generation: 0,
