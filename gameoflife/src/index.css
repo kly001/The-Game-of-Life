@@ -36,6 +36,14 @@
 }
 
 p {
-  border: 2px solid red;
-  width: 75%
+   border: 2px solid red; 
+  margin: 50px 250px;
+  font-family: YatraOne
 }
+
+h1, h2 {
+  border: 3px solid purple;
+  font-family: Orbitron
+}
+
+

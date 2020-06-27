@@ -25,6 +25,7 @@ class Game extends Component {
 	}
 
 	populate = () => {
+		
 		let gridCopy = arrayClone(this.state.gridFill);
 		for (let i = 0; i < this.rows; i++) {
 			for (let j = 0; j < this.cols; j++) {
@@ -34,9 +35,13 @@ class Game extends Component {
 			}
 		}
 		this.setState({
-			gridFill: gridCopy
+			
+			generation: 0,
+			gridFill: gridCopy	
 		});
 	}
+
+
 
 	playButton = () => {
 		clearInterval(this.intervalId);
@@ -70,6 +75,9 @@ class Game extends Component {
 		});
 	}
 
+
+
+
 gridSize = (size) => {
 	switch (size) {
 		case "1":
@@ -85,7 +93,6 @@ gridSize = (size) => {
 			this.rows = 50;
 	}
 	this.clear();
-
 }
 
 play = () => {
