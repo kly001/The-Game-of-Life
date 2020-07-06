@@ -137,7 +137,7 @@ componentDidMount() {
 
 render() {
 	return (
-		<div>
+		<div className="game">
 			
 			<Buttons
 				playButton={this.playButton}
@@ -150,14 +150,14 @@ render() {
 				gridSize={this.gridSize}
 			/>
 
-			<h2>Generation: {this.state.generation}</h2>
-
 			<Grid
 				gridFill={this.state.gridFill}
 				rows={this.rows}
 				cols={this.cols}
 				selectBox={this.selectBox}
 			/>
+
+			<h2>Generation: {this.state.generation}</h2>
 			
 		</div>
 	);

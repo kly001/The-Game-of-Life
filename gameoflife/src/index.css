@@ -25,7 +25,9 @@
   display: table;
   margin-top: 10px;
 }
-
+.home, .game {
+  background: lightgreen
+}
 .grid {
   width: 150px;
   line-height: 0;
@@ -36,14 +38,26 @@
 }
 
 p {
-   border: 2px solid red; 
-  margin: 50px 250px;
-  font-family: YatraOne
+   /* border: 2px solid red;  */
+  margin: 0px 300px;
+  font-family: YatraOne;
+  color: darkgreen
 }
 
-h1, h2 {
-  border: 3px solid purple;
-  font-family: Orbitron
+h1 {
+  /* border: 3px solid purple; */
+  margin: auto;
+  width: 50%;
+  font-family: Notable;
+  color: white;
+  background-color: dodgerblue
 }
 
-
+h2 {
+  /* border: 3px solid purple; */
+  margin: auto;
+  width: 50%;
+  font-family: Orbitron;
+  color: black;
+  background-color: dodgerblue
+}

@@ -3,10 +3,10 @@ import React, { Component } from 'react'
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="home">
 
         <h1> THE GAME OF LIFE</h1>
-
+        <br/>
         <h2>The Game</h2>
         <p> The Game of Life is a 'cellular automaton' invented by mathematician John Conway.
                     It consists of a collection of cells which, based on a few mathematical rules, 
@@ -20,10 +20,10 @@ class Home extends Component {
          Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, 
          or diagonally adjacent. At each step in time, the following transitions occur:
 
-              Any live cell with fewer than two live neighbours dies, as if by underpopulation.
-              Any live cell with two or three live neighbours lives on to the next generation.
-              Any live cell with more than three live neighbours dies, as if by overpopulation.
-              Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+              <p> #1.  Any live cell with fewer than two live neighbours dies, as if by underpopulation.</p>
+              <p> #2.  Any live cell with two or three live neighbours lives on to the next generation.</p>
+              <p> #3.  Any live cell with more than three live neighbours dies, as if by overpopulation.</p>
+              <p> #4.  Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</p>
               These rules, which compare the behavior of the automaton to real life, can be condensed into the following:
 
               Any live cell with two or three live neighbours survives.
@@ -36,7 +36,7 @@ class Home extends Component {
       </p>
       <p> *Source: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life</p>
 
-      <h2>Example Patterns</h2>
+      {/* <h2>Example Patterns</h2>
       <p> Using the provided game board(s) and rules as outline above, the students can investigate the 
             evolution of the simplest patterns. They should verify that any single living cell or any pair 
             of living cells will die during the next iteration.
@@ -68,7 +68,7 @@ class Home extends Component {
 
               Alan Hensel compiled a fairly large list of other common patterns and names for them, 
               available at radicaleye.com/lifepage/picgloss/picgloss.html.
-</p>
+</p> */}
                     
       </div>
     )
