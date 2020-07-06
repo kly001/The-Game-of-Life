@@ -29,18 +29,16 @@ class Game extends Component {
 		let gridCopy = arrayClone(this.state.gridFill);
 		for (let i = 0; i < this.rows; i++) {
 			for (let j = 0; j < this.cols; j++) {
-				if (Math.floor(Math.random() * 4) === 1) {
-					gridCopy[i][j] = true;
+				// if (Math.floor(Math.random() * 4) === 1) {
+					gridCopy[i][j] = Math.random() > 0.7;
 				}
-			}
+			// }
 		}
 		this.setState({
-			
 			generation: 0,
 			gridFill: gridCopy	
 		});
 	}
-
 
 
 	playButton = () => {
